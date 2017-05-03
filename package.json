@@ -1,0 +1,42 @@
+{
+  "name": "i18n-translate-json",
+  "description": "Automatically translates i18n JSON files via Google Translate API",
+  "preferGlobal": true,
+  "version": "1.0.0",
+  "private": false,
+  "author": "Meedan",
+  "dependencies": {
+    "async": "0.9.0",
+    "get-json": "0.0.3",
+    "google-translate": "1.0.0",
+    "traverse": "0.6.6"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": ">= 0.0.1",
+    "glob": "*"
+  },
+  "scripts": {
+    "test": "echo 'No tests yet' && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meedan/i18n-translate-json.git"
+  },
+  "keywords": [
+    "i18n",
+    "translate",
+    "google translate",
+    "internationalization",
+    "automation",
+    "build"
+  ],
+  "bin": {
+    "i18n-translate-json": "cli.js"
+  },
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/meedan/i18n-translate-json/issues"
+  },
+  "homepage": "https://github.com/meedan/i18n-translate-json"
+}
