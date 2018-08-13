@@ -127,7 +127,7 @@ var run = function(apiKey, dir, sourceLanguage, languages, finish) {
 
           // write translated targets to files
           for (var t in targets) {
-            var transStr = JSON.stringify(targets[t].value, null, "\t");
+            var transStr = JSON.stringify(targets[t].value, null, 2);
 
             var p = dir + t + ".json";
             fs.writeFileSync(p, transStr);
