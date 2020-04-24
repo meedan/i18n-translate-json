@@ -9,7 +9,7 @@ var TRANSERR = {
 };
 
 // RUN
-var run = function(apiKey, dir, sourceLanguage, languages, finish) {
+var run = function(apiKey, dir, sourceLanguage, languages, includeHtml, finish) {
 
   var ggl = google(apiKey);
 
@@ -17,7 +17,7 @@ var run = function(apiKey, dir, sourceLanguage, languages, finish) {
   var translate = function(text, language, callback) {
 
     // passthrough if contains HTML
-    if (/<[a-z][\s\S]*>/i.test(text) == true) {
+    if (!includeHtml && /<[a-z][\s\S]*>/i.test(text) == true) {
       return callback(TRANSERR.NOT_TRANSLATED, text);
     }
 

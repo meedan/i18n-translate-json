@@ -28,3 +28,7 @@ node_modules
 
 # Test Config
 test/config.js
+
+# Examples
+examples/*
+!examples/en.json
