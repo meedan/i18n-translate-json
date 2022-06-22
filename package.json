@@ -7,7 +7,7 @@
   "author": "Meedan",
   "contributors": ["Steffion"],
   "dependencies": {
-    "async": "3.2.0",
+    "async": "3.2.2",
     "get-json": "1.0.1",
     "google-translate": "3.0.0",
     "traverse": "0.6.6",
